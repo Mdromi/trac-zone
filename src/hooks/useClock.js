@@ -38,6 +38,7 @@ const useClock = () => {
     setClocks(updatedClocks);
   };
   return {
+    clocks,
     localClock,
     updateLocalClock,
     createClock,

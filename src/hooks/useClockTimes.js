@@ -9,6 +9,7 @@ const useClockTimes = (timezone, offset) => {
     const [localOffset, setLocalOffset] = useState(0);
     const [utc, setUtc] = useState(null);
 
+    // set user utc local timezone
     useEffect(() => {
         let newDate = new Date();
         const timezoneOffset = newDate.getTimezoneOffset()
